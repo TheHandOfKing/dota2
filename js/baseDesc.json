@@ -1,0 +1,23 @@
+[
+    {
+        "background-image" : "url(http://cdn.dota2.com/apps/dota2/images/blog/play/bg_04.jpg)",
+        "title" : "The most-played game on Steam.",
+        "description" : "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has truly taken on a life of its own.",
+        "quote" : "Lakaaaaad Matataaaaaaag, normalin normalin.",
+        "qoter" : "-Some famous Philipino dudes"
+    },
+    {
+        "background-image" : "url(http://cdn.dota2.com/apps/dota2/images/blog/play/bg_05.jpg);",
+        "title" : "One Battlefield. Infinite Possibilities.",
+        "description" : "When it comes to diversity of heroes, abilities, and powerful items, Dota boasts an endless array—no two games are the same. Any hero can fill multiple roles, and there's an abundance of items to help meet the needs of each game. Dota doesn't provide limitations on how to play, it empowers you to express your own style.",
+        "quote" : "It's a Disastaaaaaaaaaa!",
+        "qoter" : "-Tobi Wan"
+    },
+    {
+        "background-image" : "url(http://cdn.dota2.com/apps/dota2/images/blog/play/bg_06.jpg);",
+        "title" : "All heroes are free.",
+        "description" : "Competitive balance is Dota's crown jewel, and to ensure everyone is playing on an even field, the core content of the game—like the vast pool of heroes—is available to all players. Fans can collect cosmetics for heroes and fun add-ons for the world they inhabit, but everything you need to play is already included before you join your first match.",
+        "quote" : "We won! No, we're on the other side...!",
+        "qoter" : "-Ogre Magi, to himself..."
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_frosthaven_button.jpg",
+        "link" : "http://www.dota2.com/frosthaven/",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_720_button.jpg",
+        "link" : "http://www.dota2.com/720",
+        "alt" : "patch"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_grimstroke_button.jpg",
+        "link" : "http://www.dota2.com/grimstroke",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_international_2018_button.jpg",
+        "link" : "http://www.dota2.com/international/overview",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_feastofabscession_button.jpg",
+        "link" : "http://www.dota2.com/international/feastofabscession",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_dotaplus_button.jpg",
+        "link" : "http://www.dota2.com/plus",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rcb_duelingfates.jpg",
+        "link" : "http://www.dota2.com/duelingfates/",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rcb_ti7.jpg",
+        "link" : "http://www.dota2.com/international/overview/",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rcb_ti7_battle_pass.jpg",
+        "link" : "http://www.dota2.com/international/battlepass",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rcb_700a.jpg",
+        "link" : "http://www.dota2.com/700",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rightcol_darkrift.jpg",
+        "link" : "http://www.dota2.com/darkrift",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rightcol_ti6.jpg",
+        "link" : "http://www.dota2.com/international/",
+        "alt" : "rubick"
+    },
+    {
+        "image" : "http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rightcol_ti6battlepass.jpg",
+        "link" : "http://www.dota2.com/international/battlepass",
+        "alt" : "rubick"
+    }
+]
