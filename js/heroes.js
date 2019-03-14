@@ -170,20 +170,42 @@ function filterAttack() {
     }
 }
 
+// function showHeroInfo(event) {
+//     let heroName = document.getElementById("heroNameP")
+//     let imageHide = event.target;
+//     let pClass = document.getElementsByClassName("heroDesc")
+//     for (i = 0; i < pClass.length; i++) {
+//         pClass[i].style.display = "none"
+//         if (imageHide.alt == pClass[i].dataset.name) {
+//             pClass[i].style.display = "block"
+//             document.title = "Heropedia - " + pClass[i].dataset.name
+//             $('html, body').animate({ scrollTop: $('#heroDesc').offset().top }, 'slow');
+//             heroName.innerText = pClass[i].dataset.name;
+//         }
+//     }
+//     getHeroDesc.innerHTML += `<p class="heroDesc" data-name="${hero.name}">${hero.desc}</p>`
+// }
 function showHeroInfo(event) {
-    let heroName = document.getElementById("heroNameP")
-    let imageHide = event.target;
-    let pClass = document.getElementsByClassName("heroDesc")
-    for (i = 0; i < pClass.length; i++) {
-        pClass[i].style.display = "none"
-        if (imageHide.alt == pClass[i].dataset.name) {
-            pClass[i].style.display = "block"
-            document.title = "Heropedia - " + pClass[i].dataset.name
-            $('html, body').animate({ scrollTop: $('#heroDesc').offset().top }, 'slow');
-            heroName.innerText = pClass[i].dataset.name;
-        }
-    }
-    getHeroDesc.innerHTML += `<p class="heroDesc" data-name="${hero.name}">${hero.desc}</p>`
+    $.ajax('js/heroes.json', {
+        method: "GET",
+        dataType: "json",
+        success: function (heroes) {
+            let heroName = document.getElementById("heroNameP")
+            let imageHide = event.target;
+            let getHeroDesc = document.getElementById("heroDesc");
+            //here i write stuff for heropedia
+            for (hero of heroes) {
+                if (imageHide.alt == hero.name) {
+                    getHeroDesc.innerHTML = `<p class="heroDesc" data-name="${hero.name}">${hero.desc}</p>`
+                    document.title = "Heropedia - " + imageHide.alt
+                    heroName.innerText = imageHide.alt;
+                    $('html, body').animate({ scrollTop: $('#heroDesc').offset().top }, 'slow');
+                }
+            }
+        },
+        error: function (err) {
+            console.error(err);
+          }})
 }
 function hideImage(event) {
     let hoverImgGet = document.getElementsByClassName("heroImgHover")
