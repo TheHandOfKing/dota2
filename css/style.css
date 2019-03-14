@@ -834,7 +834,23 @@ small{
 .cartItems:last-child{
     display:inline-block
 }
+.image-cart{
+    width:38.5%;
+}
 
+.price-cart{
+    width: 20%;
+}
+.quantityCart{
+    display: flex;
+    align-items: center;
+    padding-bottom:10px;
+    margin:10px auto;
+    border:none;
+}
+.quantity-cart{
+    width: 35%;
+}
 .cartItems{
     margin-bottom:2px;
     color:rgb(177, 177, 177);
@@ -1023,6 +1039,9 @@ small{
     width:94%;
     margin:10px auto;
 }
+.oneRow img{
+    height: 50px;
+}
 
 .cartItemPart{
     display: flex;
@@ -1066,28 +1085,6 @@ small{
     font-weight: bold;
 }
 
-.totalPrice{
-    color:rgb(204, 204, 204);
-    text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.buttonPurchase{
-    display: block;
-    margin: 40px auto 40px auto;
-    cursor: pointer;
-    padding: .47em .47em;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    border-radius: .1em;
-    font-weight: bold;
-    font-size: 1.35em;
-}
-.buttonPurchase:last-child{
-    margin: 0px auto 80px auto;
-}
 /*About*/
 #aboutCreator{
     width:100%;

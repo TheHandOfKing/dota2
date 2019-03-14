@@ -109,11 +109,7 @@ function roleFilter(){
                 heroIconsBase[i].classList.remove("removedImage");
                 heroIconsBase[i].addEventListener("click", showHeroInfo);
                 heroIconsBase[i].addEventListener("mouseover", hideImage);
-            }//else if(attackFilter != heroIconsBase[i].dataset.type){
-            //     heroIconsBase[i].classList.remove("removedImage");
-            //     heroIconsBase[i].addEventListener("click", showHeroInfo);
-            //     heroIconsBase[i].addEventListener("mouseover", hideImage);
-            // }
+        }
             else{
                 heroAClass[i].classList.add("removedImage")
                 heroIconsBase[i].classList.add("removedImage");
@@ -162,29 +158,9 @@ function filterAttack() {
             heroIconsBase[i].classList.add("removedImage");
             heroIconsBase[i].removeEventListener("click", showHeroInfo);
             heroIconsBase[i].removeEventListener("mouseover", hideImage)
-         } //else if(heroArray.includes(roleFilter)){
-        //     heroIconsBase[i].classList.remove("removedImage");
-        //     heroIconsBase[i].addEventListener("click", showHeroInfo);
-        //     heroIconsBase[i].addEventListener("mouseover", hideImage);
-        // }
+         }
     }
 }
-
-// function showHeroInfo(event) {
-//     let heroName = document.getElementById("heroNameP")
-//     let imageHide = event.target;
-//     let pClass = document.getElementsByClassName("heroDesc")
-//     for (i = 0; i < pClass.length; i++) {
-//         pClass[i].style.display = "none"
-//         if (imageHide.alt == pClass[i].dataset.name) {
-//             pClass[i].style.display = "block"
-//             document.title = "Heropedia - " + pClass[i].dataset.name
-//             $('html, body').animate({ scrollTop: $('#heroDesc').offset().top }, 'slow');
-//             heroName.innerText = pClass[i].dataset.name;
-//         }
-//     }
-//     getHeroDesc.innerHTML += `<p class="heroDesc" data-name="${hero.name}">${hero.desc}</p>`
-// }
 function showHeroInfo(event) {
     $.ajax('js/heroes.json', {
         method: "GET",
