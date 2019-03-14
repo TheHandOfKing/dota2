@@ -2,6 +2,17 @@ var updateBtn = document.getElementById("generateUpdates")
 var az = document.getElementById("filterAZ");
 var dateFilter = document.getElementById("filterDate");
 $(document).ready(function(){
+    $(document).ready(function(){
+        $('#expand').click(function(){
+        if($('#header').height() == 120){
+                $('#header').stop().animate({height:"65px"})
+                $('#mainUl').stop().fadeIn().css({"display":"none"})
+            }else{
+                $('#header').stop().animate({height:"120px"})
+                $('#mainUl').stop().fadeIn().css({"display":"flex", "margin-bottom":"20px"}).children().css({"border-left":"none", "padding-left":"0px"})
+            }
+        });
+    });
     updateBtn.addEventListener("click", updates)
     dateFilter.addEventListener("click", datesFilter)
     az.addEventListener("click", filterAZ)
@@ -126,7 +137,6 @@ function datesFilter(){
         dataType: "json",
         success: function (blogs) {
             sortDate(blogs);
-            let dates = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Nov","Dec"]
             console.log(dateGet)
             var blogsHTML = "";
             for(blog of blogs){

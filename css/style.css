@@ -9,6 +9,11 @@
     list-style: none;
     font-family:"Trajan";
 }
+
+.expanded{
+    height: 120px;
+}
+
 option{
     background-color:#2a2c2d;
 }
@@ -52,6 +57,7 @@ li{
     display:inline-block;
 }
 header{
+    display:block;
     width: 100%;
     height: 65px;
     position: relative;
@@ -288,16 +294,27 @@ header{
 }
 
 footer{
-    background: url(http://cdn.dota2.com/apps/dota2/images/blog/play/bg_10.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 334px;
-    background-color: #0a0a0a;
-
+    width:100%;
+    background-color:black;
+}
+#centerFooter{
+    margin:0 auto;
+    width:50%;
+    text-align: center;
 }
 
+#centerFooter a{
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    padding-top:20px;
+}
+
+#centerFooter p{
+    color:#939393;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    padding-top:20px;
+}
 /*Index */
 #main{
     width:100%;
@@ -468,7 +485,7 @@ h3{
     background-size: cover;
     background-color: rgb(20, 20, 21);
     margin-top: -8px;
-    padding-bottom: 10px;
+    padding-bottom: 140px;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -605,6 +622,7 @@ h3{
     width: 264px;
     height: 77px;
     background-image: url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rightcol_steam_button.jpg');
+    background-repeat:no-repeat;
     margin-left: 14px;
     margin-bottom: 8px;
 }
@@ -680,8 +698,8 @@ h3{
 /*Sign styling */
 #mainDiv{
     width: 50%;
-    height:500px;
-    margin:80px auto;
+    height:460px;
+    margin:180px auto;
     box-shadow:  0px 2px 6px 2px black;
     -webkit-box-shadow: 0px 2px 76px 2px black;
     text-align: center;
@@ -747,7 +765,8 @@ small{
     background-image: url(http://cdn.dota2.com/apps/dota2/images/store/bg_main.jpg);
     width:70%;
     margin:0 auto;
-    height: 600px;
+    height: fit-content;
+    padding-bottom:20px;
 }
 
 #storeTopBar{
@@ -758,6 +777,7 @@ small{
     text-align: center;
 }
 .itemSelection{
+    cursor: pointer;
     height:100%;
     padding: 27px 25px;
     font-family: arial,helvetica,sans-serif;
@@ -772,11 +792,14 @@ small{
 }
 
 #storeItemsHolder{
+    height: 100%;
     display:block;
     width:100%;
+    text-align: center;
 }
 
 .item{
+    margin-left:20px;
     width: 300px;
     background-image: url(http://cdn.dota2.com/apps/dota2/images/store/bg_spotlight.png);
     display:inline-block;
@@ -805,35 +828,73 @@ small{
     height: 200px;
 }
 .addToCart{
+    z-index: 4;
     font-size: 14px;
     text-align: center;
 }
+.cartItems:last-child{
+    display:inline-block
+}
 
 .cartItems{
-    margin-bottom:3px;
+    margin-bottom:2px;
     color:rgb(177, 177, 177);
     display:block;
     font-family: Arial, Helvetica, sans-serif;
 }
-.itemDesc{
-    cursor: pointer;
-    width:100%;
-    background-color: #34471e;
-    padding: 15px;
-    border: 1px #3c3c3c solid;
-    text-align: center;
-    display:none;
+.itemsType{
+    color:rgb(119, 119, 119)
 }
-.addToCartBtn{
+.itemsPrice{
+    display:inline-block;
+}
 
-}
 .addToCartBtn img{
     width: 20px;
     height: 20px;
 }
 /* MEdia queries*/
-
+@media screen and (max-width: 1780px) {
+    #storeHolder{
+        width:100%;
+    }
+    .item{
+        margin-left:90px;
+    }
+}
 @media screen and (max-width: 1280px) {
+    #storeHolder{
+        width:100%;
+    }
+    .attributes{
+        display:none;
+    }
+    .heropediaClasses{
+        display:block;
+        width:100%;
+        padding-bottom:20px;
+        height: fit-content;
+    }
+    #heroWrap{
+        width:100%;
+    }
+    #heroDescr{
+        width:100%;
+        text-align: center;
+    }
+    #nameRolePlaceholder{
+        width:100%;
+    }
+    #mainDiv{
+        width:100%;
+        height:fit-content;
+    }
+    #mainDiv input{
+        width: 100%;
+    }
+    #centerFooter{
+        width:100%;
+    }
     #middleHeading {
       width: 100%;
     }
@@ -857,10 +918,32 @@ small{
   }
 
 @media screen and (max-width: 1100px){
+    #postPosition{
+        text-align: center;
+        background-color:black;
+        background:none;
+    }
+    #postsHolder{
+        text-align: center;
+        background:none;
+    }
+    #tabs{
+        margin:0 auto;
+    }
+    #rightInfo{
+        display: none;
+    }
+    #leftInfo{
+        margin:0 auto;
+        float:none;
+    }
+    #bottomContentNews{
+        background:none;
+        background-color: #181818;
+    }
     #video{
         width:98%;
     }
-
     .of2 .placement .bigOne{
         text-align: center;
         font-size:32px;
@@ -892,8 +975,29 @@ small{
         box-shadow: inset 0 0 0 1000px rgba(116, 116, 116, 0.562);
     }
 } 
-
+#footer footer{
+    margin-top:290px;
+}
 @media screen and (max-width: 922px) {
+    .item{
+        margin-left:10px;
+    }
+    #leftInfo{
+        width:100%;
+    }
+    #postPosition{
+        width:100%;
+    }
+    #postsHolder{
+        padding:0;
+    }
+    #tabs{
+        width:100%;
+    }
+    .tabs{
+        padding:0 15px;
+        font-size:8px;
+    }
     #imageHolder{
         width:170px;
     }
@@ -905,6 +1009,10 @@ small{
     }
   }
   @media screen and (max-width: 722px) {
+
+    filter p{
+        display:none;
+    }
     #imageHolder{
         width:170px;
     }
@@ -918,6 +1026,28 @@ small{
   }
 
   @media screen and (max-width:522px) {
+      .itemSelection{
+          border:none;
+      }
+      .itemSelection:first-child{
+        border:none;
+    }
+      .item{
+          margin:0 auto;
+      }
+      #logoBtn img{
+          width:100%;
+      }
+      #filter{
+          width:100%;
+          display:flex;
+      }
+      #filter #filterTag{
+          display:none;
+      }
+      #heroWrap{
+          height: 700px;
+      }
     #imageHolder{
         display: none;
     }

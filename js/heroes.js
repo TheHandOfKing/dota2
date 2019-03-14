@@ -1,3 +1,52 @@
+$(document).ready(function(){
+    $(document).ready(function(){
+        $('#expand').click(function(){
+        if($('#header').height() == 120){
+                $('#header').stop().animate({height:"65px"})
+                $('#mainUl').stop().fadeIn().css({"display":"none"})
+            }else{
+                $('#header').stop().animate({height:"120px"})
+                $('#mainUl').stop().fadeIn().css({"display":"flex", "margin-bottom":"20px"}).children().css({"border-left":"none", "padding-left":"0px"})
+            }
+        });
+    });
+    $.ajax('js/heroes.json', {
+        method: "GET",
+        dataType: "json",
+        success: function (heroes) {
+            //here i write stuff for heropedia
+            var getHeroIcons1 = document.getElementsByClassName("heroIcons")[0]
+            var getHeroIcons2 = document.getElementsByClassName("heroIcons")[1]
+            var getHeroIcons3 = document.getElementsByClassName("heroIcons")[2]
+            for (hero of heroes) {
+                showHeroInfo(event);
+                heroTag.innerHTML += `<option>${hero.name}</option>`
+                
+                if (hero.class == "Strength") {
+                    getHeroIcons1.innerHTML += `<a class="heroIconsBase"> <img src="${hero.image}" alt="${hero.name}" class="heroesImg" data-role="${hero.role}" data-type="${hero.type}">
+                <img src=${hero.imageHover} alt="${hero.name}" class="heroImgHover" data-role="${hero.role}" data-type="${hero.type}">`
+                } else if (hero.class == "Agility") {
+                    getHeroIcons2.innerHTML += `<a class="heroIconsBase"> <img src="${hero.image}" alt="${hero.name}" class="heroesImg" data-role="${hero.role}" data-type="${hero.type}">
+                    <img src=${hero.imageHover} alt="${hero.name}" class="heroImgHover" data-role="${hero.role}" data-type="${hero.type}">`
+                } else if (hero.class == "Intelligence") {
+                    getHeroIcons3.innerHTML += `<a class="heroIconsBase"> <img src="${hero.image}" alt="${hero.name}" class="heroesImg" data-role="${hero.role}" data-type="${hero.type}">
+                    <img src=${hero.imageHover} alt="${hero.name}" class="heroImgHover" data-role="${hero.role}" data-type="${hero.type}">`
+                }
+            }
+            //Event listneres for images
+            for (i = 0; i < getHeroImg.length; i++) {
+                getBigImage[i].addEventListener("click", showHeroInfo)
+                getHeroImg[i].addEventListener("mouseover", hideImage)
+                getBigImage[i].addEventListener("mouseleave", e => returnImage(e.target))
+            }
+            roleFilterGet.addEventListener("change", roleFilter)
+            attackTypeGet.addEventListener("change", filterAttack)
+            heroNameGet.addEventListener("change", filterName)
+        },
+        error: function (err) {
+            console.error(err);
+          }})
+})
 // All the getters and vars
 var getPedia = document.getElementById("heropediaMain");
 var heroClasses = ["Strength", "Agility", "Intellingence"];
@@ -172,41 +221,3 @@ function returnImage(bigImage) {
         hoverImg[i].classList.remove("displayed")
     }
 }
-
-
-$.ajax('js/heroes.json', {
-    method: "GET",
-    dataType: "json",
-    success: function (heroes) {
-        //here i write stuff for heropedia
-        var getHeroIcons1 = document.getElementsByClassName("heroIcons")[0]
-        var getHeroIcons2 = document.getElementsByClassName("heroIcons")[1]
-        var getHeroIcons3 = document.getElementsByClassName("heroIcons")[2]
-        for (hero of heroes) {
-            showHeroInfo(event);
-            heroTag.innerHTML += `<option>${hero.name}</option>`
-            
-            if (hero.class == "Strength") {
-                getHeroIcons1.innerHTML += `<a class="heroIconsBase"> <img src="${hero.image}" alt="${hero.name}" class="heroesImg" data-role="${hero.role}" data-type="${hero.type}">
-            <img src=${hero.imageHover} alt="${hero.name}" class="heroImgHover" data-role="${hero.role}" data-type="${hero.type}">`
-            } else if (hero.class == "Agility") {
-                getHeroIcons2.innerHTML += `<a class="heroIconsBase"> <img src="${hero.image}" alt="${hero.name}" class="heroesImg" data-role="${hero.role}" data-type="${hero.type}">
-                <img src=${hero.imageHover} alt="${hero.name}" class="heroImgHover" data-role="${hero.role}" data-type="${hero.type}">`
-            } else if (hero.class == "Intelligence") {
-                getHeroIcons3.innerHTML += `<a class="heroIconsBase"> <img src="${hero.image}" alt="${hero.name}" class="heroesImg" data-role="${hero.role}" data-type="${hero.type}">
-                <img src=${hero.imageHover} alt="${hero.name}" class="heroImgHover" data-role="${hero.role}" data-type="${hero.type}">`
-            }
-        }
-        //Event listneres for images
-        for (i = 0; i < getHeroImg.length; i++) {
-            getBigImage[i].addEventListener("click", showHeroInfo)
-            getHeroImg[i].addEventListener("mouseover", hideImage)
-            getBigImage[i].addEventListener("mouseleave", e => returnImage(e.target))
-        }
-        roleFilterGet.addEventListener("change", roleFilter)
-        attackTypeGet.addEventListener("change", filterAttack)
-        heroNameGet.addEventListener("change", filterName)
-    },
-    error: function (err) {
-        console.error(err);
-      }})

@@ -12,14 +12,15 @@
     <title>Dota - Play for Free</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="middleHeading">
             <div id="imageHolder">
                 <a href="index.html"><img src="images/dota2.png" alt="dotka" class="logoImg"></a>
             </div>
+            <i class="fas fa-bars" id="expand"></i>
             <ul id="mainUl">
-                <li><a href="news.html">News</p></li>
-                <li><p>Store</p></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="store.html">Store</a></li>
                 <li><a href="heropedia.html">Heropedia</a></li>
             </ul>
             <div id="loginPlay">
@@ -32,33 +33,26 @@
     </header>
     <div id="storeHolder">
         <div id="storeTopBar">
-            <a class="itemSelection" href="">Treasure</a>
-            <a class="itemSelection" href="">Hero Items</a>
-            <a class="itemSelection" href="">Hero Sets</a>
+            <a class="itemSelection" id="Treasure">Treasure</a>
+            <a class="itemSelection" id="HeroItem">Hero Items</a>
+            <a class="itemSelection" id="HeroSet">Hero Sets</a>
         </div>
 
         <div id="storeItemsHolder">
-            <div class="item">
-                <div class="itemName">
-                    <p>Item Name</p>
-                </div>
-                <div class="itemImage">
-                    <a><img src="https://steamcdn-a.akamaihd.net/apps/dota2/images/store/banners/rubick_arcana.jpg" alt=""></a>
-                </div>
-                <div class="itemDesc">
-                    <a href="" class="addToCartBtn">
-                        <img src="http://cdn.dota2.com/apps/dota2/images/store/cart.png" class="SmallCartIcon">
-                    </a>
-                </div>
-                <div class="addToCart">
-                    <p class="cartItems itemsName">The Magus Cypher Bundle</p>
-                    <p class="cartItems itemsType">Hero Set</p>
-                    <p class="cartItems itemsPrice">31e</p>
-                    
-                </div>
-            </div>
+
         </div>
     </div>
+</div>
+<div id="footer">
+<footer>
+    <div id="centerFooter">
+        <a href="documentation.pdf">Documentation</a>
+        <a href="sitemap.xml">Sitemap</a>
+        <a href="about.html">About</a>
+
+        <p>© Valve Corporation, all rights reserved. Valve, the Valve logo, Steam, the Steam logo, Source, the Source logo, Valve Source and Dota are trademarks and/or registered trademarks of Valve Corporation.</p>
+    </div>
+</footer>
 </div>
 </body>
 <script src="js/storage.js"></script>

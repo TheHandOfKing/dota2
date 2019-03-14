@@ -1,37 +1,86 @@
 [
     {
         "title": "The Magus Cypher Bundle",
-        "description": "Most Magi believed the Puzzle of Perplex to be a mere curiosity. Yet generations of wizards had broken themselves trying to solve it",
+        "description": "Most Magi believed the Puzzle of Perplex to be a mere curiosity. Yet generations of wizards had broken themselves trying to solve it.",
         "image" : "https://steamcdn-a.akamaihd.net/apps/dota2/images/store/banners/rubick_arcana.jpg",
         "type": "Hero Set",
         "price": "31"
     },    
     {
-        "title": "The Magus Cypher Bundle",
-        "description": "Most Magi believed the Puzzle of Perplex to be a mere curiosity. Yet generations of wizards had broken themselves trying to solve it",
-        "image" : "https://steamcdn-a.akamaihd.net/apps/dota2/images/store/banners/rubick_arcana.jpg",
+        "title": "Feast of Abscession Bundle",
+        "description": "Centuries ago, the Rumusque priestess Crella forged unbreakable links of hook and chain to bind the most powerful servants.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/bundles/pudge_arcana_bundle_large.41d16dd314c149fe040594bf679e5fb91009b986.png",
+        "type": "Hero Item",
+        "price": "37"
+    },    
+    {
+        "title": "Bladeform Legacy Bundle",
+        "description": "Yurnero’s mask has been cleaved in two, awakening the ancient souls that once laid dormant inside it.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/sets/dota_item_bladeform_legacy_bundle_large.d94acc067cbb873b5025e197366ebe52931297fb.png",
+        "type": "Hero Set",
+        "price": "142"
+    },    
+    {
+        "title": "Frostivus 2018 Treasure 2",
+        "description": "Each time you open this treasure you will receive one of the treasure.You will not receive duplicates.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/tools/frostivus_2018_treasure_2_large.923dd2f957f9dfeef8aa0935433fa566090d4b21.png",
+        "type": "Treasure",
+        "price": "2.55"
+    },    
+    {
+        "title": "Great Sage's Reckoning Bundle",
+        "description": "Though his misdeeds have long been forgiven, the thrills of Sun Wukong's crimes live on.Relive three legendary trials.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/bundles/great_reckoning_arcana_bundle_large.0a22a31e47c41209a453a9838d892415e118c399.png",
         "type": "Hero Set",
         "price": "31"
     },    
     {
-        "title": "The Magus Cypher Bundle",
-        "description": "Most Magi believed the Puzzle of Perplex to be a mere curiosity. Yet generations of wizards had broken themselves trying to solve it",
-        "image" : "https://steamcdn-a.akamaihd.net/apps/dota2/images/store/banners/rubick_arcana.jpg",
-        "type": "Hero Set",
-        "price": "31"
+        "title": "Treasure of the Glacial Abyss",
+        "description": "Each time you open this treasure you will receive one of the treasure.You will not receive duplicates.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/tools/dotapit_5_treasure_chest_large.79cfb608232422af5a59eb74e4bb653c569731d2.png",
+        "type": "Treasure",
+        "price": "2.20"
     },    
     {
-        "title": "The Magus Cypher Bundle",
-        "description": "Most Magi believed the Puzzle of Perplex to be a mere curiosity. Yet generations of wizards had broken themselves trying to solve it",
-        "image" : "https://steamcdn-a.akamaihd.net/apps/dota2/images/store/banners/rubick_arcana.jpg",
-        "type": "Hero Set",
-        "price": "31"
+        "title": "Warding Guise",
+        "description": "Warding Guise is a custom ward. It changes the appearance of Observer Wards and Sentry Wards.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/items/wards/warding_guise/warding_guise_npc_dota_observer_wards_large.2c2003ac9e4bc35bc7232969caf665aa69345adb.png",
+        "type": "Hero Item",
+        "price": "5.25"
     },    
     {
-        "title": "The Magus Cypher Bundle",
-        "description": "Most Magi believed the Puzzle of Perplex to be a mere curiosity. Yet generations of wizards had broken themselves trying to solve it",
-        "image" : "https://steamcdn-a.akamaihd.net/apps/dota2/images/store/banners/rubick_arcana.jpg",
+        "title": "Spear of the Reckless Vigor",
+        "description": "This set was made for Frostivus 2018. Sadly, even huskar fell to the mighty power of winter holydays.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/items/huskar/armor_of_reckless_vigor_weapon/armor_of_reckless_vigor_weapon.eb567913216dd06e328532ece9f58366ca89e694.png",
+        "type": "Hero Item",
+        "price": "1.24"
+    },    
+    {
+        "title": "Tempest Helm of the Thundergod Bundle",
+        "description": "Forged by the Hammers of Celestarr, this mighty helm feels at home resting across the brow of the Lord of Heaven himself.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/items/zeus/tempest_helm/zeus_arcana_large.5b0b48d4919a4130cbcca6e89c72b91555c34a12.png",
         "type": "Hero Set",
-        "price": "31"
+        "price": "45"
+    },    
+    {
+        "title": "Treasure of the Rotted Gallows",
+        "description": "This treasure contains full item sets. The items in this treasure will not be tradable or marketable.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/tools/rotted_gallows_large.3c4c46347690a079d5c8a3d1a91a32898bc65e3f.png",
+        "type": "Treasure",
+        "price": "2.89"
+    },    
+    {
+        "title": "Chains of the Black Death",
+        "description": "This set comes with multiple styles, as well as custom ability icons and particle effects. It was created as a collaboration with DotaCinema.",
+        "image" : "https://steamcdn-a.akamaihd.net/apps/570/icons/econ/loading_screens/blackdeath_large.2327c61d25c093b2ed4cf9ad353c009256107ac3.png",
+        "type": "Hero Set",
+        "price": "24.89"
+    },    
+    {
+        "title": "Manifold Paradox Blades",
+        "description": "With a raspy cackle, the elder smith Craler swung the sword that his family had spent eleven generations to fold and forge.",
+        "image" : "http://cdn.dota2.com/apps/dota2/images/store/arcana20684_w.jpg",
+        "type": "Hero Item",
+        "price": "56"
     }
 ]

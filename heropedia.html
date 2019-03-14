@@ -11,15 +11,16 @@
     <title>Heropedia</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="middleHeading">
             <div id="imageHolder">
                 <a href="index.html"><img src="images/dota2.png" alt="dotka" class="logoImg"></a>
             </div>
+            <i class="fas fa-bars" id="expand"></i>
             <ul id="mainUl">
                 <li><a href="news.html">News</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><p>Heropedia</p></li>
+                <li><a href="heropedia.html">Heropedia</a></li>
             </ul>
             <div id="loginPlay">
                 <ul id="userLogin">
@@ -41,7 +42,7 @@
         </div>
 
         <div id="filter">
-            <p>Filter</p>
+            <p id="filterTag">Filters</p>
             <select name="roles" id="roles">
                 <option selected disabled>By Role</option>
                 <option>All</option>
@@ -70,7 +71,13 @@
     </div>
 
     <footer>
-        
+        <div id="centerFooter">
+            <a href="documentation.pdf">Documentation</a>
+            <a href="sitemap.xml">Sitemap</a>
+            <a href="about.html">About</a>
+
+            <p>© Valve Corporation, all rights reserved. Valve, the Valve logo, Steam, the Steam logo, Source, the Source logo, Valve Source and Dota are trademarks and/or registered trademarks of Valve Corporation.</p>
+        </div>
     </footer>
 </body>
 <script src="js/heroes.js"></script>
