@@ -11,13 +11,13 @@ $(document).ready(function () {
         });
     });
 })
-    $.ajax('js/storeItems.json', {
-        method: "GET",
-        dataType: "json",
-        success: function (items) {
-            var itemHolder = document.getElementById("storeItemsHolder")
-            for (item of items) {
-                itemHolder.innerHTML += `<div class="item">
+$.ajax('js/storeItems.json', {
+    method: "GET",
+    dataType: "json",
+    success: function (items) {
+        var itemHolder = document.getElementById("storeItemsHolder")
+        for (item of items) {
+            itemHolder.innerHTML += `<div class="item">
                 <div class="itemName">
                     <p>${item.title}</p>
                 </div>
@@ -31,12 +31,20 @@ $(document).ready(function () {
                     
                 </div>
             </div>`
-            }
-        },
-        error: function (err) {
-            console.log(err)
         }
-    });
+        var cartItems = document.getElementsByClassName("itemImage");
+        for (i = 0; i < cartItems.length; i++) {
+            cartItems[i].addEventListener("click", addToLocal)
+        }
+
+        function addToLocal(event) {
+           
+        }
+    },
+    error: function (err) {
+        console.log(err)
+    }
+});
 var heroSet = document.getElementById("HeroSet")
 var heroItem = document.getElementById("HeroItem")
 var treasure = document.getElementById("Treasure")
@@ -45,7 +53,7 @@ heroSet.addEventListener("click", filterSets)
 heroItem.addEventListener("click", filterItems)
 treasure.addEventListener("click", filterTreasure)
 
-function filterItems(){
+function filterItems() {
     $.ajax('js/storeItems.json', {
         method: "GET",
         dataType: "json",
@@ -53,8 +61,8 @@ function filterItems(){
             var itemHolder = document.getElementById("storeItemsHolder")
             itemHolder.innerHTML = " "
             for (item of items) {
-                if(item.type == "Hero Item"){
-                itemHolder.innerHTML += `<div class="item">
+                if (item.type == "Hero Item") {
+                    itemHolder.innerHTML += `<div class="item">
                 <div class="itemName">
                     <p>${item.title}</p>
                 </div>
@@ -68,15 +76,15 @@ function filterItems(){
                     
                 </div>
             </div>`
-            } 
-        }
-    },
+                }
+            }
+        },
         error: function (err) {
             console.log(err)
         }
     });
 }
-function filterSets(){
+function filterSets() {
     $.ajax('js/storeItems.json', {
         method: "GET",
         dataType: "json",
@@ -84,8 +92,8 @@ function filterSets(){
             var itemHolder = document.getElementById("storeItemsHolder")
             itemHolder.innerHTML = " "
             for (item of items) {
-                if(item.type == "Hero Set"){
-                itemHolder.innerHTML += `<div class="item">
+                if (item.type == "Hero Set") {
+                    itemHolder.innerHTML += `<div class="item">
                 <div class="itemName">
                     <p>${item.title}</p>
                 </div>
@@ -99,16 +107,16 @@ function filterSets(){
                     
                 </div>
             </div>`
-            } 
-        }
-    },
+                }
+            }
+        },
         error: function (err) {
             console.log(err)
         }
     });
 }
 
-function filterTreasure(){
+function filterTreasure() {
     $.ajax('js/storeItems.json', {
         method: "GET",
         dataType: "json",
@@ -116,8 +124,8 @@ function filterTreasure(){
             var itemHolder = document.getElementById("storeItemsHolder")
             itemHolder.innerHTML = " "
             for (item of items) {
-                if(item.type == "Treasure"){
-                itemHolder.innerHTML += `<div class="item">
+                if (item.type == "Treasure") {
+                    itemHolder.innerHTML += `<div class="item">
                 <div class="itemName">
                     <p>${item.title}</p>
                 </div>
@@ -131,9 +139,9 @@ function filterTreasure(){
                     
                 </div>
             </div>`
-            } 
-        }
-    },
+                }
+            }
+        },
         error: function (err) {
             console.log(err)
         }

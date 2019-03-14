@@ -853,6 +853,10 @@ small{
     width: 20px;
     height: 20px;
 }
+
+.descRow{
+    color:rgb(204, 204, 204);
+}
 /* MEdia queries*/
 @media screen and (max-width: 1780px) {
     #storeHolder{
@@ -977,6 +981,136 @@ small{
 } 
 #footer footer{
     margin-top:290px;
+}
+
+/*Cart Items*/
+#allCartHolder{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+#cartItemHolder{
+    width:65%;
+    margin:60px auto;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+.sectionDesc{
+    margin:0 auto;
+ }
+ .cart{
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.itemCart{
+    width: 36%;
+}
+
+.cost{
+    width: 20%;
+    color: rgb(204, 204, 204);
+}
+
+.quantity{
+    width: 35%;
+}
+
+.oneRow{
+    display: flex;
+    width:94%;
+    margin:10px auto;
+}
+
+.cartItemPart{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+    margin:10px auto;
+}
+
+.image-cart{
+    width:38.5%;
+}
+
+.price-cart{
+    width: 20%;
+}
+
+.quantity-cart{
+    width: 35%;
+}
+.cart-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.buttonRemove{
+    cursor: pointer;
+    padding: .67em .67em;
+    color: white;
+    background-color: rgb(73, 73, 73);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.totalPrice{
+    color:rgb(204, 204, 204);
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.buttonPurchase{
+    display: block;
+    margin: 40px auto 40px auto;
+    cursor: pointer;
+    padding: .47em .47em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: .1em;
+    font-weight: bold;
+    font-size: 1.35em;
+}
+.buttonPurchase:last-child{
+    margin: 0px auto 80px auto;
+}
+/*About*/
+#aboutCreator{
+    width:100%;
+    height:800px;
+    text-align: center;
+}
+
+#aboutCreator img{
+    margin:0 auto;
+    margin-top:50px;
+    display:block;
+}
+
+#aboutCreator p{
+    width:60%;
+    color: rgb(204, 204, 204);
+    margin:20px auto;
+    letter-spacing: 0px;
+}
+
+#aboutCreator h1{
+    margin-top:40px;
 }
 @media screen and (max-width: 922px) {
     .item{
